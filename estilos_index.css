@@ -1,0 +1,17 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+body{
+  background-image: url("fondo.jpg");
+}
+
+#main_header{
+  height: 500px;
+  background:rgba(0,0,0,0.6);
+}
+
+footer{
+  height: 100px;
+}
