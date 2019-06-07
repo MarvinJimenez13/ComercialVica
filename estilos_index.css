@@ -4,14 +4,41 @@
 	border: 0;
 }
 body{
-  background-image: url("fondo.jpg");
+  background: url("fondo.png")no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-
+img{
+	height: auto;
+	width: 100%;
+}
 #main_header{
   height: 500px;
-  background:rgba(0,0,0,0.6);
 }
-
-footer{
-  height: 100px;
+#main_footer{
+  height: 109px;
+}
+#footIzq{
+	height: 100%;
+	width: 25%;
+	background:rgba(0,0,0,0.7);
+	float: left;
+}
+#footDer{
+	height: 100%;
+	width: 75%;
+	float: right;
+}
+#contenedorI{
+	height: 100%;
+	width: 25%;
+	float: left;
+	background:rgba(0, 0, 0, 0.7);
+}
+#contenedorD{
+	height: 100%;
+	width: 75%;
+	float: right;
 }
