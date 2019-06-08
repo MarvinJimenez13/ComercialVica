@@ -1,0 +1,112 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+body{
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+img{
+	width: 100%;
+}
+#main_header{
+  height: 609px;
+}
+#main_footer{
+  height: 0px;
+}
+#footIzq{
+	height: 100%;
+	width: 25%;
+	animation: 1.2s ease-out 0s 1 slideInFromLeft;
+	background:rgba(0,0,0,0.8);
+	float: left;
+}
+#footDer{
+	height: 100%;
+	width: 75%;
+	float: right;
+}
+#contenedorI{
+	background: url("../imagenes/fon.jpg") no-repeat;
+	animation: 1.2s ease-out 0s 1 slideInFromLeft;
+	height: 100%;
+	width: 25%;
+	float: left;
+}
+#div_logo{
+	height:50%;
+	width: 100%;
+	position: relative;
+	background:rgba(0,0,0,0.8);
+}
+#div_menu{
+	height:50%;
+	width: 100%;
+	position: relative;
+	background:rgba(0,0,0,0.8);
+}
+#contenedorD{
+	animation: 1.2s ease-out 0s 1 slideInFromRight;
+	background: url("../imagenes/fondo.png")no-repeat;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+	height: 100%;
+	width: 75%;
+	float: right;
+}
+#menu{
+	height: 100%;
+	width: 100%;
+}
+.menu ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	height: 100%;
+}
+.menu li{
+	animation: 1.2s ease-out 0s 1 slideInFromLeft;
+	text-align: center;
+	flex-grow: 1;
+	border-bottom: 1px solid black;
+}
+
+.menu li:hover{
+background:rgba(0,0,0,0.9);
+border-radius: 3px 3px;
+}
+.menu li a:hover{
+	color: white;
+}
+.menu li a{
+	margin: 0;
+	margin-right: black;
+	display: block;
+	padding: 17px 10px;
+	color: white;
+	font-size: 30px;
+	font-family: arial;
+	font-weight: bold;
+	text-decoration: none;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
