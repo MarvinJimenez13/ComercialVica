@@ -11,24 +11,11 @@ body{
 }
 img{
 	width: 100%;
+	height: 88%;
+	align-content: center;
 }
 #main_header{
   height: 609px;
-}
-#main_footer{
-  height: 0px;
-}
-#footIzq{
-	height: 100%;
-	width: 25%;
-	animation: 1.2s ease-out 0s 1 slideInFromLeft;
-	background:rgba(0,0,0,0.8);
-	float: left;
-}
-#footDer{
-	height: 100%;
-	width: 75%;
-	float: right;
 }
 #contenedorI{
 	background: url("../imagenes/fon.jpg") no-repeat;
@@ -73,7 +60,7 @@ img{
 	animation: 1.2s ease-out 0s 1 slideInFromLeft;
 	text-align: center;
 	flex-grow: 1;
-	border-bottom: 1px solid black;
+	border-bottom: 1px dotted black;
 }
 
 .menu li:hover{
@@ -109,4 +96,101 @@ border-radius: 3px 3px;
 	100% {
 		transform: translateX(0);
 	}
+}
+
+#main_movil{
+	display: none;
+}
+#btn_menu{
+	display: none;
+}
+
+
+
+@media (max-width:800px) {
+
+	#main_header{
+	  display: none;
+	}
+	#main_movil{
+		height:580px;
+		display: block;
+		animation:0.5s ease-out 0s 1 slideInFromRight;
+	}
+	#der_movil{
+		width: 15%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.8);
+		float: right;
+	}
+ .logo_movil{
+	 align-content: center;
+	 background: rgba(0,0,0,0.8);
+	 height: 100%;
+	 width: 70%;
+ }
+ #izq_movil{
+	 width: 15%;
+ 	height: 100%;
+	float: left;
+	background: rgba(0, 0, 0, 0.8);
+ }
+	#header{
+		height: 250px;
+		background: url("../imagenes/fon.jpg") no-repeat;
+	}
+	.nav{
+		padding: 2px;
+		margin: 1px;
+		border-right: 1px solid black;
+		width: 10%;
+		height: 120%;
+		text-align: center;
+
+	}
+	#li1_movil a{
+	 text-align: center;
+	 font-size:42px;
+	 color: white;
+	 font-family: arial;
+	 font-weight: bold;
+	 text-decoration: none;
+}
+	.contenedorMenu label {
+		display: block;
+		background: url("../imagenes/menu_p.png");
+		animation:0.5s ease-out 0s 1 slideInFromRight;
+
+	}
+
+	.menu_movil{
+		position: absolute;
+		z-index: 1;
+	  background: url("../imagenes/fon.jpg");
+		width:100%;
+		margin-left: -100%;
+		transition: 0.5s;
+		text-align: center;
+
+	}
+	.menu_movil ul{
+		flex-direction: column;
+		background: rgba(0, 0, 0, 0.8);
+	}
+	.menu_movil li{
+     border-top: 1px solid black;
+	}
+
+	#btn_menu{
+		border-right: 2px solid black;
+	}
+	#btn_menu:checked ~ .menu_movil{
+		margin:0;
+	}
+#img_main{
+	height: 60%;
+	animation: 1.2s ease-out 0s 1 slideInFromRight;
+	background: url("../imagenes/fondo.png")no-repeat center;
+}
+
 }
