@@ -1,0 +1,270 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-variant: normal;
+}
+body{
+  overflow: hidden;
+  background: url("../imagenes/fondo-agua-3.png")fixed center no-repeat;
+}
+img{
+	width: 100%;
+	height: 85%;
+	align-content: center;
+}
+
+.divImg{
+height: 100%;
+width: 100%;
+float: left;
+overflow: hidden;
+box-sizing: border-box;
+margin: 0px;
+}
+.divImg ul{
+	padding: 0;
+	display: flex;
+	width:700%;
+	animation:  cambio 30s infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in;
+}
+.divImg li{
+	width: 100%;
+	height:150%;
+	list-style: none;
+}
+.divImg img{
+	width: 100%;
+	height: 150%;
+	margin-top: 0;
+	padding: 0;
+}
+@keyframes cambio{
+	0% { margin-left: 0; }
+	14% { margin-left: 0; }
+	15% { margin-left: -100%; }
+	29% { margin-left: -100%; }
+	30% { margin-left: -200%; }
+	43% { margin-left: -200%; }
+	44% { margin-left: -300%; }
+  57% { margin-left: -300%; }
+  58% { margin-left: -400%; }
+  71% { margin-left: -400%; }
+  72% { margin-left: -500%; }
+  85% { margin-left: -500%; }
+  86% { margin-left: -600%; }
+  100% { margin-left: -600%; }
+}
+
+
+#main_header{
+  height: 609px;
+}
+#contenedorI{
+	background: url("../imagenes/fon.jpg");
+	animation: 1.2s ease-out 0s 1 slideInFromLeft;
+	height: 100%;
+	width: 25%;
+position: fixed;
+}
+#div_logo{
+	height:50%;
+	width: 100%;
+	position: relative;
+	background:rgba(0,0,0,0.8);
+}
+#div_menu{
+	height:50%;
+	width: 100%;
+	position: relative;
+	background:rgba(0,0,0,0.8);
+}
+#contenedorD{
+	animation: 1.2s ease-out 0s 1 slideInFromRight;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+	height: 100%;
+	width: 75%;
+  float:right;
+}
+#menu{
+	height: 100%;
+	width: 100%;
+}
+.menu ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	height: 100%;
+}
+.menu li{
+	animation: 1.2s ease-out 0s 1 slideInFromLeft;
+	text-align: center;
+	flex-grow: 1;
+	border-bottom: 1px dotted black;
+}
+
+.menu li:hover{
+background:rgba(0,0,0,0.9);
+border-radius: 3px 3px;
+}
+.menu li a:hover{
+	color: white;
+}
+#li1p{
+  background: white;
+}
+#productos{
+  color:black;
+}
+#productos:hover{
+  background: rgba(0,0,0,0.8);
+}
+.menu li a{
+	margin: 0;
+	margin-right: black;
+	display: block;
+	padding: 17px 10px;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.imgp{
+  width: 100%;
+  height: 80%;
+}
+#ladoCentral{
+  width: 80%;
+  height: 100%;
+  float: left;
+}
+#ladoIzq{
+  width: 10%;
+  height: 100%;
+  float: left;
+}
+#ladoDer{
+  width: 10%;
+  height: 100%;
+  float: right;
+}
+h1{
+  font-weight: bold;
+  margin-top: 20px;
+
+}
+#main_movil{
+	display: none;
+}
+#btn_menu{
+	display: none;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+
+
+@media (max-width:580px) {
+body{
+  overflow-y: auto;
+}
+	#main_header{
+	  display: none;
+	}
+	#main_movil{
+		height:580px;
+		display: block;
+		animation:0.5s ease-out 0s 1 slideInFromRight;
+	}
+	#der_movil{
+		width: 15%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.8);
+		float: right;
+	}
+ .logo_movil{
+	 align-content: center;
+	 background: rgba(0,0,0,0.8);
+	 height: 100%;
+	 width: 70%;
+ }
+ #izq_movil{
+	 width: 15%;
+ 	height: 100%;
+	float: left;
+	background: rgba(0, 0, 0, 0.8);
+ }
+	#header{
+		height: 200px;
+		background: url("../imagenes/fon.jpg") no-repeat;
+	}
+	.nav{
+		padding: 1px;
+		margin: 1px;
+		border-right: 1px solid black;
+		width: 12%;
+		height: 120%;
+		text-align: center;
+
+	}
+	#li1_movil a{
+	 text-align: center;
+	 font-size:40px;
+	 color: white;
+	 font-weight: bold;
+	 text-decoration: none;
+}
+	.contenedorMenu label {
+		display: block;
+		background: url("../imagenes/menu_p.png");
+		animation:0.5s ease-out 0s 1 slideInFromRight;
+
+	}
+
+	.menu_movil{
+		position: absolute;
+		z-index: 1;
+	  background: url("../imagenes/fon.jpg");
+		width:100%;
+		margin-left: -100%;
+		transition: 0.5s;
+		text-align: center;
+
+	}
+	.menu_movil ul{
+		flex-direction: column;
+		background: rgba(0, 0, 0, 0.8);
+	}
+	.menu_movil li{
+     border-top: 1px solid black;
+	}
+
+	#btn_menu{
+		border-right: 2px solid black;
+	}
+	#btn_menu:checked ~ .menu_movil{
+		margin:0;
+	}
+
+
+}
